@@ -42,3 +42,32 @@ Multithreaded-Word-Count
 
 ## Author
 Project developed to demonstrate multithreading and parallel processing in Java.
+
+## Parallelism Strategy
+The application uses data parallelism by splitting the input file into independent chunks.  
+Each thread processes a different chunk simultaneously, which improves performance compared to sequential execution.
+
+---
+
+## Thread Safety
+To prevent race conditions:
+- Each thread maintains its own local word count (local HashMap)
+- Results are combined after all threads finish execution
+- This reduces contention between threads and ensures correct results
+
+---
+
+## Performance Benefit
+Using multithreading significantly improves performance when working with large files:
+- Sequential execution processes one part at a time
+- Parallel execution processes multiple parts simultaneously
+- This leads to faster execution time and better CPU utilization
+
+---
+
+## Key Concepts
+- Multithreading
+- Parallelism
+- Data Partitioning
+- Thread Safety
+- Race Condition
