@@ -1,12 +1,12 @@
 # Multithreaded Word Count
 
 ## Project Overview
-This project is a Java application that counts the number of words in a large text file using multithreading.
+This project is a python application that counts the number of words in a large text file using multithreading.
 
 The program divides the file into smaller parts and assigns each part to a separate thread. Each thread processes its portion of the text and counts the words. Finally, the results from all threads are combined to produce the total word count.
 
 ## Objectives
-- Demonstrate the concept of multithreading in Java.
+- Demonstrate the concept of multithreading .
 - Process large text files efficiently.
 - Compare single-threaded and multithreaded performance.
 
@@ -18,7 +18,7 @@ The program divides the file into smaller parts and assigns each part to a separ
 5. The results are combined to get the total word count.
 
 ## Technologies Used
-- Java
+- python 
 - Multithreading
 - File Handling
 
@@ -27,8 +27,8 @@ The program divides the file into smaller parts and assigns each part to a separ
 Multithreaded-Word-Count
 │
 ├── src
-│   ├── Main.java
-│   ├── WordCountThread.java
+│   ├── Main.py
+│   ├── WordCountThread.py
 │
 ├── data
 │   └── textfile.txt
@@ -41,4 +41,4 @@ Multithreaded-Word-Count
 - Add a graphical interface
 
 ## Author
-Project developed to demonstrate multithreading and parallel processing in Java.
+Project developed to demonstrate multithreading and parallel processing.
