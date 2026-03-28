@@ -35,6 +35,15 @@ Multithreaded-Word-Count
 │
 └── README.md
 
+## User Interface
+
+This project includes a simple web interface built using Gradio.
+
+Users can:
+- Upload a text file
+- Choose number of threads
+- Compare single-threaded vs multi-threaded performance
+  
 ## Future Improvements
 - Add support for very large files
 - Display the most frequent words
