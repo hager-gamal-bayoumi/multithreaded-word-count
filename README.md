@@ -1,53 +1,123 @@
-# Multithreaded Word Count
+# Multithreaded Word Counter 
+
+Python GUI application for multithreaded word counting using MVC architecture, Strategy Pattern, and Producer-Consumer synchronization.
+
+---
 
 ## Project Overview
-This project is a python application that counts the number of words in a large text file using multithreading.
 
-The program divides the file into smaller parts and assigns each part to a separate thread. Each thread processes its portion of the text and counts the words. Finally, the results from all threads are combined to produce the total word count.
+This project demonstrates parallel programming concepts using multithreading in Python.
 
-## Objectives
-- Demonstrate the concept of multithreading .
-- Process large text files efficiently.
-- Compare single-threaded and multithreaded performance.
+The application reads a text file, divides it into smaller chunks, and processes each chunk using multiple threads to count words efficiently. It also compares the execution time between single-threaded and multithreaded approaches.
 
-## How It Works
-1. The program reads a large text file.
-2. The file is divided into multiple parts.
-3. Each part is processed by a separate thread.
-4. Each thread counts the words in its part.
-5. The results are combined to get the total word count.
+The project follows clean software architecture principles and includes real-time visualization using a graphical user interface.
+
+---
+
+## Features
+
+- Multithreaded word counting
+- Single-thread vs Multithread comparison
+- Producer–Consumer synchronization
+- Queue-based thread communication
+- MVC Architecture Pattern
+- Strategy Design Pattern
+- Interactive GUI using Tkinter
+- Performance visualization using Matplotlib
+
+---
 
 ## Technologies Used
-- python 
-- Multithreading
-- File Handling
+
+- Python
+- Tkinter
+- Threading
+- Queue
+- Matplotlib
+- Object-Oriented Programming (OOP)
+
+---
+
+## Architecture & Design Patterns
+
+### MVC Architecture
+- Model → `WordCounterModel`
+- View → `AppView`
+- Controller → `Controller`
+
+### Strategy Pattern
+- `ManualThreadStrategy`
+- `AutoThreadStrategy`
+
+### Producer–Consumer Pattern
+Implemented using:
+- Queue
+- Threads
+- Synchronization Lock
+
+---
+
+## How It Works
+
+1. The application reads a text file.
+2. The text is split into multiple chunks.
+3. Each chunk is assigned to a separate worker thread.
+4. Threads process chunks concurrently.
+5. Word counts are collected and combined.
+6. Execution times are compared and visualized.
+
+---
 
 ## Project Structure
 
-Multithreaded-Word-Count
+```text
+multithreaded-word-counter/
 │
-├── src
-│   ├── Main.py
-│   ├── WordCountThread.py
+├── main.py
+├── README.md
+├── requirements.txt
+├── sample.txt
+├── .gitignore
 │
-├── data
-│   └── textfile.txt
-│
-└── README.md
+└── screenshots/
+    ├── home.png
+    ├── manual-result.png
+    └── auto-result.png
+```
 
-## User Interface
+---
 
-This project includes a simple web interface built using Gradio.
+## How To Run
 
-Users can:
-- Upload a text file
-- Choose number of threads
-- Compare single-threaded vs multi-threaded performance
-  
+```bash
+pip install -r requirements.txt
+python main.py
+```
+
+---
+
+## Screenshots
+
+### Home Interface
+![Home](screenshots/home.png)
+
+### Manual Thread Mode
+![Manual Result](screenshots/manual-result.png)
+
+### Auto Thread Mode
+![Auto Result](screenshots/auto-result.png)
+
+---
+
 ## Future Improvements
-- Add support for very large files
-- Display the most frequent words
-- Add a graphical interface
+
+- Add multiprocessing support
+- Real-time thread monitoring
+- Export results to CSV
+- Enhanced statistics visualization
+
+---
 
 ## Author
-Project developed to demonstrate multithreading and parallel processing.
+
+Developed by Hager Gamal for the Parallel Programming course project.
