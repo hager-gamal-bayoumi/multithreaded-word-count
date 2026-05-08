@@ -76,8 +76,10 @@ multithreaded-word-counter/
 ├── main.py
 ├── README.md
 ├── requirements.txt
-├── sample.txt
 ├── .gitignore
+│
+├── data/
+│   └── sample.txt
 │
 └── screenshots/
     ├── home.png
