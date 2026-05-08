@@ -71,20 +71,20 @@ Implemented using:
 ## Project Structure
 
 ```text
-multithreaded-word-counter/
-│
-├── main.py
-├── README.md
-├── requirements.txt
-├── .gitignore
+multithreaded-word-count/
 │
 ├── data/
 │   └── sample.txt
 │
-└── screenshots/
-    ├── home.png
-    ├── manual-result.png
-    └── auto-result.png
+├── screenshots/
+│   ├── auto-result.png
+│   ├── home.png
+│   └── manual-result.png
+│
+├── .gitignore
+├── README.md
+├── main.py
+└── requirements.txt
 ```
 
 ---
