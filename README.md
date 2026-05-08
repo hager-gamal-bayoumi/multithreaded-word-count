@@ -120,4 +120,4 @@ python main.py
 
 ## Author
 
-Developed by Hager Gamal for the Parallel Programming course project.
+Developed as a Parallel Programming course project.
